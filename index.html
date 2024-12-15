@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css files -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="modal bg-dark-50" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" id="close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="louding" class="position-fixed top-0 bottom-0 start-0 end-0 bg-dark-subtle d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark-50 fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#">Ricpes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link text-white" role="button">pasta</a>
+                  <a class="nav-link text-white" role="button">tomato</a>
+                  <a class="nav-link text-white" role="button">salad</a>
+                  <a class="nav-link text-white" role="button">carrot</a>
+                  <a class="nav-link text-white" role="button">corn</a>
+                  <a class="nav-link text-white" role="button">fries</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <section class="vh-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <h1 class="text-center text-white fw-light mb-5">Never Miss a Recipe!</h1>
+                <input type="text"  class="form-control mb-4" id="searchinput" placeholder="Search by the name of dish">
+                    <select class="form-select mb-4" aria-label="Default select example">
+                        <option value="carrot" selected>carrot</option>
+                        <option value="broccoli">broccoli</option>
+                        <option value="asparagus">asparagus</option>
+                        <option value="cauliflower">cauliflower</option>
+                        <option value="corn">corn</option>
+                        <option value="cucumber">cucumber</option>
+                        <option value="green pepper">green pepper</option>
+                        <option value="lettuce">lettuce</option>
+                        <option value="mushrooms">mushrooms</option>
+                        <option value="onion">onion</option>
+                        <option value="potato">potato</option>
+                        <option value="pumpkin">pumpkin</option>
+                        <option value="red pepper">red pepper</option>
+                        <option value="tomato">tomato</option>
+                        <option value="beetroot">beetroot</option>
+                        <option value="brussel sprouts">brussel sprouts</option>
+                        <option value="peas">peas</option>
+                        <option value="zucchini">zucchini</option>
+                        <option value="radish">radish</option>
+                        <option value="sweet potato">sweet potato</option>
+                        <option value="artichoke">artichoke</option>
+                        <option value="leek">leek</option>
+                        <option value="cabbage">cabbage</option>
+                        <option value="celery">celery</option>
+                        <option value="chili">chili</option>
+                        <option value="garlic">garlic</option>
+                        <option value="basil">basil</option>
+                        <option value="coriander">coriander</option>
+                        <option value="parsley">parsley</option>
+                        <option value="dill">dill</option>
+                        <option value="rosemary">rosemary</option>
+                        <option value="oregano">oregano</option>
+                        <option value="cinnamon">cinnamon</option>
+                        <option value="saffron">saffron</option>
+                        <option value="green bean">green bean</option>
+                        <option value="bean">bean</option>
+                        <option value="chickpea">chickpea</option>
+                        <option value="lentil">lentil</option>
+                        <option value="apple">apple</option>
+                        <option value="apricot">apricot</option>
+                        <option value="avocado">avocado</option>
+                        <option value="banana">banana</option>
+                        <option value="blackberry">blackberry</option>
+                        <option value="blackcurrant">blackcurrant</option>
+                        <option value="blueberry">blueberry</option>
+                        <option value="boysenberry">boysenberry</option>
+                        <option value="cherry">cherry</option>
+                        <option value="coconut">coconut</option>
+                        <option value="fig">fig</option>
+                        <option value="grape">grape</option>
+                        <option value="grapefruit">grapefruit</option>
+                        <option value="kiwifruit">kiwifruit</option>
+                        <option value="lemon">lemon</option>
+                        <option value="lime">lime</option>
+                        <option value="lychee">lychee</option>
+                        <option value="mandarin">mandarin</option>
+                        <option value="mango">mango</option>
+                        <option value="melon">melon</option>
+                        <option value="nectarine">nectarine</option>
+                        <option value="orange">orange</option>
+                        <option value="papaya">papaya</option>
+                        <option value="passion fruit">passion fruit</option>
+                        <option value="peach">peach</option>
+                        <option value="pear">pear</option>
+                        <option value="pineapple">pineapple</option>
+                        <option value="plum">plum</option>
+                        <option value="pomegranate">pomegranate</option>
+                        <option value="quince">quince</option>
+                        <option value="raspberry">raspberry</option>
+                        <option value="strawberry">strawberry</option>
+                        <option value="watermelon">watermelon</option>
+                        <option value="salad">salad</option>
+                        <option value="pizza" selected>pizza</option>
+                        <option value="pasta">pasta</option>
+                        <option value="popcorn">popcorn</option>
+                        <option value="lobster">lobster</option>
+                        <option value="steak">steak</option>
+                        <option value="bbq">bbq</option>
+                        <option value="pudding">pudding</option>
+                        <option value="hamburger">hamburger</option>
+                        <option value="pie">pie</option>
+                        <option value="cake">cake</option>
+                        <option value="sausage">sausage</option>
+                        <option value="tacos">tacos</option>
+                        <option value="kebab">kebab</option>
+                        <option value="poutine">poutine</option>
+                        <option value="seafood">seafood</option>
+                        <option value="chips">chips</option>
+                        <option value="fries">fries</option>
+                        <option value="masala">masala</option>
+                        <option value="paella">paella</option>
+                        <option value="som tam">som tam</option>
+                        <option value="chicken">chicken</option>
+                        <option value="toast">toast</option>
+                        <option value="marzipan">marzipan</option>
+                        <option value="tofu">tofu</option>
+                        <option value="ketchup">ketchup</option>
+                        <option value="hummus">hummus</option>
+                        <option value="maple syrup">maple syrup</option>
+                        <option value="parma ham">parma ham</option>
+                        <option value="fajitas">fajitas</option>
+                        <option value="champ">champ</option>
+                        <option value="lasagna">lasagna</option>
+                        <option value="poke">poke</option>
+                        <option value="chocolate">chocolate</option>
+                        <option value="croissant">croissant</option>
+                        <option value="arepas">arepas</option>
+                        <option value="bunny chow">bunny chow</option>
+                        <option value="pierogi">pierogi</option>
+                        <option value="donuts">donuts</option>
+                        <option value="rendang">rendang</option>
+                        <option value="sushi">sushi</option>
+                        <option value="ice cream">ice cream</option>
+                        <option value="duck">duck</option>
+                        <option value="curry">curry</option>
+                        <option value="beef">beef</option>
+                        <option value="goat">goat</option>
+                        <option value="lamb">lamb</option>
+                        <option value="turkey">turkey</option>
+                        <option value="pork">pork</option>
+                        <option value="fish">fish</option>
+                        <option value="crab">crab</option>
+                        <option value="bacon">bacon</option>
+                        <option value="ham">ham</option>
+                        <option value="pepperoni">pepperoni</option>
+                        <option value="salami">salami</option>
+                        <option value="ribs">ribs</option> 
+                      </select>
+              <button type="button" class="btn btn-outline-warning fw-bold px-sm-5 d-block mx-auto">Search</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container-fluid py-5">
+            <h2 class="text-center mb-5">Recipe Categories</h2>
+            <div class="row g-4">
+                
+            </div> 
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+<!-- <div class="col-lg-3 col-md-4">
+    <div class="card border-0 shadow">
+        <img src="..." class="card-img-top object-fit-cover" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+</div> -->
+                        <!-- <option value="lettuce">lettuce</option>
+                        <option value="mushrooms">mushrooms</option>
+                        <option value="onion">onion</option>
+                        <option value="potato">potato</option>
+                        <option value="pumpkin">pumpkin</option>
+                        <option value="red pepper">red pepper</option>
+                        <option value="tomato">tomato</option>
+                        <option value="beetroot">beetroot</option>
+                        <option value="brussel sprouts">brussel sprouts</option>
+                        <option value="peas">peas</option>
+                        <option value="zucchini">zucchini</option>
+                        <option value="radish">radish</option>
+                        <option value="sweet potato">sweet potato</option>
+                        <option value="artichoke">artichoke</option>
+                        <option value="leek">leek</option>
+                        <option value="cabbage">cabbage</option>
+                        <option value="celery">celery</option>
+                        <option value="chili">chili</option>
+                        <option value="garlic">garlic</option>
+                        <option value="basil">basil</option>
+                        <option value="coriander">coriander</option>
+                        <option value="parsley">parsley</option>
+                        <option value="dill">dill</option>
+                        <option value="rosemary">rosemary</option>
+                        <option value="oregano">oregano</option>
+                        <option value="cinnamon">cinnamon</option>
+                        <option value="saffron">saffron</option>
+                        <option value="green bean">green bean</option>
+                        <option value="bean">bean</option>
+                        <option value="chickpea">chickpea</option>
+                        <option value="lentil">lentil</option>
+                        <option value="apple">apple</option>
+                        <option value="apricot">apricot</option>
+                        <option value="avocado">avocado</option>
+                        <option value="banana">banana</option>
+                        <option value="blackberry">blackberry</option>
+                        <option value="blackcurrant">blackcurrant</option>
+                        <option value="blueberry">blueberry</option>
+                        <option value="boysenberry">boysenberry</option>
+                        <option value="cherry">cherry</option>
+                        <option value="coconut">coconut</option>
+                        <option value="fig">fig</option>
+                        <option value="grape">grape</option>
+                        <option value="grapefruit">grapefruit</option>
+                        <option value="kiwifruit">kiwifruit</option>
+                        <option value="lemon">lemon</option>
+                        <option value="lime">lime</option>
+                        <option value="lychee">lychee</option>
+                        <option value="mandarin">mandarin</option>
+                        <option value="mango">mango</option>
+                        <option value="melon">melon</option>
+                        <option value="nectarine">nectarine</option>
+                        <option value="orange">orange</option>
+                        <option value="papaya">papaya</option>
+                        <option value="passion fruit">passion fruit</option>
+                        <option value="peach">peach</option>
+                        <option value="pear">pear</option>
+                        <option value="pineapple">pineapple</option>
+                        <option value="plum">plum</option>
+                        <option value="pomegranate">pomegranate</option>
+                        <option value="quince">quince</option>
+                        <option value="raspberry">raspberry</option>
+                        <option value="strawberry">strawberry</option>
+                        <option value="watermelon">watermelon</option>
+                        <option value="salad">salad</option>
+                        <option value="pizza" selected>pizza</option>
+                        <option value="pasta">pasta</option>
+                        <option value="popcorn">popcorn</option>
+                        <option value="lobster">lobster</option>
+                        <option value="steak">steak</option>
+                        <option value="bbq">bbq</option>
+                        <option value="pudding">pudding</option>
+                        <option value="hamburger">hamburger</option>
+                        <option value="pie">pie</option>
+                        <option value="cake">cake</option>
+                        <option value="sausage">sausage</option>
+                        <option value="tacos">tacos</option>
+                        <option value="kebab">kebab</option>
+                        <option value="poutine">poutine</option>
+                        <option value="seafood">seafood</option>
+                        <option value="chips">chips</option>
+                        <option value="fries">fries</option>
+                        <option value="masala">masala</option>
+                        <option value="paella">paella</option>
+                        <option value="som tam">som tam</option>
+                        <option value="chicken">chicken</option>
+                        <option value="toast">toast</option>
+                        <option value="marzipan">marzipan</option>
+                        <option value="tofu">tofu</option>
+                        <option value="ketchup">ketchup</option>
+                        <option value="hummus">hummus</option>
+                        <option value="maple syrup">maple syrup</option>
+                        <option value="parma ham">parma ham</option>
+                        <option value="fajitas">fajitas</option>
+                        <option value="champ">champ</option>
+                        <option value="lasagna">lasagna</option>
+                        <option value="poke">poke</option>
+                        <option value="chocolate">chocolate</option>
+                        <option value="croissant">croissant</option>
+                        <option value="arepas">arepas</option>
+                        <option value="bunny chow">bunny chow</option>
+                        <option value="pierogi">pierogi</option>
+                        <option value="donuts">donuts</option>
+                        <option value="rendang">rendang</option>
+                        <option value="sushi">sushi</option>
+                        <option value="ice cream">ice cream</option>
+                        <option value="duck">duck</option>
+                        <option value="curry">curry</option>
+                        <option value="beef">beef</option>
+                        <option value="goat">goat</option>
+                        <option value="lamb">lamb</option>
+                        <option value="turkey">turkey</option>
+                        <option value="pork">pork</option>
+                        <option value="fish">fish</option>
+                        <option value="crab">crab</option>
+                        <option value="bacon">bacon</option>
+                        <option value="ham">ham</option>
+                        <option value="pepperoni">pepperoni</option>
+                        <option value="salami">salami</option>
+                        <option value="ribs">ribs</option> 
